@@ -1,0 +1,96 @@
+---
+layout: default
+permalink: /помощници
+title: Online Corpus | Нашите помощници
+description: Хората, които допринасят за изграждането на Online Corpus
+lang: bg
+---
+
+<div class="container"> 
+      <!-- bage header start -->
+      <div class="page-header">
+        <h1 style="color: black">{{ site.data.properties.contributors-page }}</h1>
+        <ol class="breadcrumb">
+          <li><a href="{{ site.baseUrl }}/">{{ site.data.properties.home }}</a></li>
+          <li class="active">{{ site.data.properties.our-contributors }}</li>
+        </ol>
+      </div>
+      <!-- bage header end --> 
+</div>
+
+  <!-- data start -->
+  <section>
+      <div class="container ">
+        <div class="row "> 
+          <!-- left sec start -->
+          <div class="col-md-11 col-sm-11">
+            <div class="row">
+                {% for author in site.data.properties.authors %} 
+                <div class="col-sm-16 author-box">
+                    <div class="row">
+                      <div class=" col-xs-16 col-sm-3"><img width="128" height="128" alt="{{ site.data.properties.author-avatar }}" src="{{ site.baseUrl }}/{{ author.gravatar }}" class="img-thumbnail"></div>
+                      <div class="col-xs-16 col-sm-13">
+                        <h4>{{ author.name }}</h4>
+                        <p> {{ author.description }} </p>
+                        <ul class="list-inline">
+                          {% if author.twitter %}
+                          <li><a href="{{ autor.twitter }}"><span class="ion-social-twitter"></span></a></li>
+                          {% endif %}
+                          {% if author.facebook %}
+                          <li><a href="{{ author.facebook }}"><span class="ion-social-facebook"></span></a></li>
+                          {% endif %}
+                          {% if author.linkedin %}
+                          <li><a href="{{ author.linkedin }}"><span class="ion-social-linkedin"></span></a></li>
+                          {% endif %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-16">
+                      <div class="main-title-outer pull-left">
+                        <div class="main-title">{{ site.data.properties.author-posts }}</div>
+                      </div>
+                    </div>
+                   {% for post in site.posts %}
+                      {% if post.author contains author.id %}
+                      <div class="sec-topic col-sm-16 col-md-8"> <a href='{{ site.url }}/{% if site.lang == "bg" %}{{ site.lang }}{% endif %}{{ post.url }}'><img width="1000" height="606" alt="{{ post.title }}" src="{{ post.image }}" class="img-thumbnail lozad">
+                        <div class="sec-info">
+                          <h3>{{ post.title }}</h3>
+                          <div class="text-danger sub-info-bordered">
+                            <div class="time"><span class="ion-android-data icon"></span>{{ post.date | date_to_string }}</div>
+                            <div class="comments"><span class="ion-folder"></span>
+                              {% for category in post.categories %}{{ category | append:" " }}{% endfor %}</div>
+                              {% if post.rating %}
+                              <div class="stars">
+                                {% include star-rating.html %}
+                              </div>
+                              {% endif %}
+                          </div>
+                        </div>
+                        </a>
+                        <p>{{ post.description }}</p>
+                      </div>
+                      {% endif %}
+                   {% endfor %}
+                   <div class="col-sm-16" style="margin-top: 75px">
+                    </div>
+                {% endfor %}
+                </div>
+                </div>
+          <!-- left sec end --> 
+          
+          <!-- right sec start -->
+          <div class="col-sm-5 hidden-xs right-sec">
+            <div class="bordered">
+              <div class="row ">
+                <div class="col-sm-16 bt-space"> <img class="lozad img-responsive" src="/assets/images/posts/email-protector-banner-hackers-away.jpg.webp" width="336" height="280" alt="{{ site.data.properties.email-protector }}"/> <a href="{{ site.email-protector-url }}" class="sponsored">{{ site.data.properties.sponsored-ad }}</a> </div>
+                {% include social.html %}
+                {% include activities.html %}
+                {% include radio.html %}
+                {% include calendar.html %} 
+                </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>

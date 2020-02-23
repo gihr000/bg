@@ -1,0 +1,66 @@
+---
+layout: default
+permalink: /блог
+title: Online Corpus | Блог постове
+description: Научавайте последните новини в света на киберпрестъпността.
+lang: bg
+---
+
+<div class="container"> 
+      <!-- bage header start -->
+      <div class="page-header">
+        <h1 style="color: black">{{ site.data.properties.all-blog-posts }}</h1>
+        <ol class="breadcrumb">
+          <li><a href='{{ site.url }}/{% if site.lang == "bg" %}{{ site.lang }}{% endif %}{{ site.data.properties.home }}'></a></li>
+          <li class="active">{{ site.data.properties.all-blog-posts }}</li>
+        </ol>
+      </div>
+      <!-- bage header end --> 
+</div>
+
+<section>
+      <div class="container ">
+        <div class="row "> 
+          <!-- left sec start -->
+          <div class="col-md-11 col-sm-11">
+            <div class="row">
+ 
+                 {% for category in site.data.properties.categories %}
+                   {% for post in site.posts %}
+                      {% if post.categories contains category %}
+                      <div class="col-sm-16">
+                           <div class="main-title-outer pull-left">
+                             <div id="{{ category }}" class="main-title"><h2 class="white h-16">{{ category }} {{ site.data.properties.category }}</h2></div>
+                           </div>
+                         </div>
+                         {% break %}
+                      {% endif %}
+                   {% endfor %}
+
+                   {% for post in site.posts %}
+                      {% if post.categories contains category %}      
+                         {% include all-post-thumbnail.html %} 
+                      {% endif %}
+                   {% endfor %}
+                   <div class="col-sm-16" style="margin-top: 75px"></div>
+                {% endfor %}
+                   
+                </div>
+                </div>
+          <!-- left sec end --> 
+          
+          <!-- right sec start -->
+          <div class="col-sm-5 hidden-xs right-sec">
+            <div class="bordered">
+              <div class="row ">
+                <div class="col-sm-16 bt-space"> <img class="lozad img-responsive" src="/assets/images/posts/email-protector-banner-hackers-away.jpg.webp" width="336" height="280" alt="Keep hackers away"/> <a href="https://chrome.google.com/webstore/detail/email-protector/lnnmnigpldphlpeidbehpddjlfpggalb" class="sponsored">sponsored advert</a> </div>
+                {% include social.html %}
+                {% include activities.html %}
+                {% include radio.html %}
+                {% include calendar.html %} 
+                </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>

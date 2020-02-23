@@ -1,0 +1,109 @@
+online-corpus: Online Corpus
+online-corpus-description: Online Corpus Ви помага да се справите с кибератаки от типа на човека по средата/man in the middle attack/, компрометиране на бизнес имейли/BEC attack/, както и фишинг и уейлинг атаки. Ние провеждаме обучения за киберсигурност и предоставяме софтуер за киберзащита, който държи киберпрестъпниците далеч от вас. Целта на нашия уебсайт и блог е да ви предоставим достатъчно знания, така че да бъдете информирани за най-новите тенденции в света на киберпрестъпността и да Ви научим как да бъдете в безопасност онлайн.
+subscribe-newsletter: Абонирайте се за нашия бюлетин
+subscribe-newsletter-placeholder: Въведете Вашия имейл и получавайте всички новини лесно!
+popular-tags: Популярни тагове
+categories: ["имейл", "фишинг", "киберпрестъпност", "данни"]
+auto-type-text: [
+  "Информирайте се за последните новини в света на киберпрестъпността и киберсигурността.",
+  "Научете какво е общото между фишинг, спиър фишинг и уейлинг.",
+  "Научете как да бъдете в безопасност онлайн.",
+  "Ние полагаме пътя към успешен и сигурен онлайн бизнес."]
+popular: популярни
+recent: скорошни
+all-blog-posts: Онлайн корпус блог постове по категории
+all-posts: всички-постове
+our-contributors: Нашите партньори
+services: услуги
+home: Начало
+contact: Контакт
+advertise: реклама
+advertise-with-us: Рекламирай с нас
+toggle-navigation: Превключи навигацията
+privacy-policy-url: политика-за-поверителност
+privacy-policy: Политика за поверителност
+blog: Блог
+blog-url: блог
+contributors-url: партньори
+chose-language: Избери език
+english: английски
+bulgarian: български
+latest-in-hacking-world: Последно от света на хакерството
+sponsored-ad: Спонсорирана реклама
+cc-online-corpus: © 2019-2039 ОНЛАЙН КОРПУС - ВСИЧКИ ПРАВА ЗАПАЗЕНИ
+email-protector: Имейл Протектор
+email-protector-url: email-protector
+sorry: Съжаляваме
+sorry-paragraph: За съжаление страницата, която търсите, не може да бъде намерена. Тя може да бъде временно недостъпна, преместена или вече не съществува.
+go-to-home: Иди до начална страница
+related-topics: Свързани теми
+trending-topics: Актуални теми
+index-heading-top-0: Технологията направи хакването лесно.<br> Ние ви учим как да бъдете в безопасност онлайн.
+index-heading-top-1: Нищо не е по-важно от вашата онлайн сигурност. Ние можем да Ви помогнем да предпазите имейла си от зловредни атаки.
+index-heading-top-2: Хакерите могат да получат достъп до вашия имейл. Нашето разширение - Email Protector може да ви информира за зловредните имейли, които Сте получили!
+index-heading-top-3-1: Нашето разширение е безплатно и можете да го изтеглите от
+index-heading-top-3-1: Уеб магазин на Chrome.
+cyber-awareness-training: Обучение по киберсигурност
+cyber-awareness-training-url: обучение-по-киберсигурност
+index-boxes-hacking-technical-details-header: Обучение по киберсигурност
+index-boxes-hacking-technical-details-header-details: Някога питали ли сте се как работи хакерството? Разбирането на техническите подробности ще ви помогне да избегнете бъдещи кибератаки и да подобрите съществуващите работни процеси, които могат да доведат до допускането на пробив.
+index-boxes-preventing-phishing-url: фишинг-предотвратяване
+index-boxes-preventing-phishing-header: Как да предотвратим фишинг атаки
+index-boxes-preventing-phishing-header-details: Фишинг кампаниите не могат да се състоят без разпространението на огромен брой имейли. Анализирането на хедъра на имейл съобщенията изглежда трудно на пръв поглед. Открихме начин да улесним този процес и да ви спестим главоболията.
+phishing-as-a-service-url: фишинг-като-услуга
+index-boxes-phishing-train-header: Фишинг като услуга
+index-boxes-phishing-train-header-details: Изградете уменията си и тествайте служителите си, без всъщност да сте жертва на хакери. Ние предоставяме реалистични сценарии, които могат да ви помогнат да разберете напълно разликата между истински и фишинг имейли и съответно да оптимизирате вашия софтуер.
+view-details: Виж детайли
+request-demo: Получи оферта
+phaas-request-submission: Заяви фишинг кампания
+first-name: Име
+last-name: Фамилия
+phone-number: Телефонен номер
+email-address: Имейл адрес
+additional-information-form: Въведете допълнителна информация тук...
+submit-request: Изпрати заявка
+company-organization: Име на фирма/организация
+last-update: Последно добавен
+days-ago: дни
+click-to-subscribe: Клинки за да се абонираш
+subscribe: Абонирай се
+to-rss: за RSS
+followers: последователи
+subscribers: абонати
+fans: фенове
+facebook: Facebook
+twitter: Twitter
+linkedin: Linkedin
+disqus-comments: Коментари
+contributors-page: Страница на партньорите ни
+author-posts: Авторски публикации
+author-avatar: Авторски аватар
+category: категория
+all-posts-url: блог
+all-posts-title: Всички публикации на Online Corpus
+share: Сподели
+cybersec-shaken-by-ai: Киберсигурността под заплаха от изкуственият интелект
+ai-game-changer: Изкуственият интелект - играчът, променящ правилата в киберсигурността
+recent-posts: Скорошни публикации
+sponsored-ad: Платена реклама
+
+# Authors
+authors:
+   -  id: georgi
+      name: Георги Спасов
+      display_name: Георги Спасов 
+      gravatar: 'assets/images/contributors/georgi-spasov.jpeg'
+      email: admin@onlinecorpus.com
+      web: https://onlinecorpus.com
+      twitter: https://twitter.com/
+      linkedin: https://www.linkedin.com/in/georgi-spasov-/
+      description: "Георги бе международна точка за контакт по въпроси с киберпрестъпността, паралелно с работата му в българското звено по киберпрестъпност. Сега той е софтуерен инженер и развива продукти, използвани от системни администратори по целия свят"
+      
+   -  id: ivan
+      name: Иван К.
+      display_name: Иван К.
+      gravatar: 'assets/images/contributors/ivan-k.jpg'
+      email: contact@onlinecorpus.com
+      web: https://onlinecorpus.com
+      twitter:
+      description: "Иван е специалист по кибер сигурност, който активно следи развитието на тенденциите в престъпния свят. Той е експерт в областта на митигацията на уейлинг и фишинг, и има добри знания в оценката на бизнес рискове." 
